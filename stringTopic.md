@@ -23,5 +23,30 @@ public class demo1{
 |int|indexOf(String s,int startsearch)|
 |int|lastIndexOf(char c)|
 |int|lastIndexOf(String s)|  
+  
+  ```java
+  public static void main(String[] args) {
+		
+		String s1="javadeveloper";
+		System.out.println(s1.length());//13
+		System.out.println(s1.charAt(5));//e
+		System.out.println(s1.indexOf('e'));//5
+		System.out.println(s1.indexOf("dev"));//4
+		System.out.println(s1.indexOf("ab"));//-1
+		System.out.println(s1.indexOf('e',8));//11
+		System.out.println(s1.lastIndexOf('a'));//3
+	}
+```
+```java
+char[]a=s1.tocharArray();
+		for(char c:a)
+		{
+			System.out.println(c);
+		}
+```
+## Immutable
+1.String is immutable type  
+2.Once the String obj is created the same obj value cant be changed  
+3.If we try to change String obj, a new obj will be created and returned  
 
  	
