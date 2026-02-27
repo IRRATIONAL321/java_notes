@@ -22,4 +22,6 @@ public class demo1{
 |int|indexOf(char c,int startsearch)|
 |int|indexOf(String s,int startsearch)|
 |int|lastIndexOf(char c)|
-|int|lastIndexOf(String s)| 	
+|int|lastIndexOf(String s)|  
+
+ 	
