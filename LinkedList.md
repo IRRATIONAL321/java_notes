@@ -53,7 +53,34 @@ public class LinkedList {
 			System.out.println(curr.ele);
 			curr=curr.next;
 		}
-	}
+	}public void addIndex(Object ele,int index)
+    {
+        if(index<0||index>size())
+            throw new IndexOutOfBoundsException();
+        if(index==0)
+        {
+            addFirst(ele);
+            return ;
+        }
+
+        Node n=new Node(ele);
+        Node curr=head;
+        for(int i=1;i<index;i++)
+        {
+            curr=curr.next;
+        }
+        n.next=curr.next;
+        curr.next=n;
+        count++;
+
+    }
+    public void addFirst(Object ele)
+    {
+        Node n=new Node(ele);
+        n.next=head;
+        head=n;
+        count++;
+    }
 
 }
 ```
